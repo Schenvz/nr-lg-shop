@@ -63,84 +63,85 @@
     </nav>
     <nav class="navbar fixed-top bg-body-tertiary">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Fixed top</a>
+        <a class="navbar-brand" href="#">AR-biop</a>
+        <!-- IMPORTANTE: Inicio del menú lateral -->
+        <!-- IMPORTANTE: Encabezado con logotipo y menú -->
+        <div class="container-flex align-items-center justify-content-end">
+          <button
+            class="btn bg-white text-black btn-outline-ligth btn-l btn-lg hamburger_menu"
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1000"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasWithBothOptions"
+            aria-controls="offcanvasWithBothOptions"
+          >
+            Menú <i class="fa-solid fa-bars fa-lg"></i>
+          </button>
+        </div>
+        <div class="container-fluid d-flex flex-row-reverse">
+          <div
+            class="offcanvas offcanvas-end"
+            data-bs-scroll="true"
+            tabindex="-1"
+            id="offcanvasWithBothOptions"
+            aria-labelledby="offcanvasWithBothOptionsLabel"
+          >
+            <div class="offcanvas-header justify-content-end">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <!-- IMPORTANTE: Contenido del menú lateral -->
+              <!-- Logo -->
+              <img
+                class="rounded-circle"
+                src="./img/btc3.ico"
+                id="logo"
+                alt="logo_sitio"
+                width="125"
+                height="125"
+              />
+              <!-- Fin del logo -->
+              <!-- Lista de enlaces del menú -->
+              <ul class="menu">
+                <li><a href="index.html" class="menu_color">Inicio</a></li>
+                <li>
+                  <a href="./html/crypto__final.html" class="menu_color"
+                    >Nuestros proyectos</a
+                  >
+                </li>
+                <li>
+                  <a href="./html/nft__final.html" class="menu_color"
+                    >¿Quienes somos?</a
+                  >
+                </li>
+                <li>
+                  <a href="./html/contacto__final.html" class="menu_color"
+                    >¡Contacto!</a
+                  >
+                </li>
+                <li>
+                  <a href="./html/portafolio__final.html" class="menu_color"
+                    >Precios</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <p class="text-center text-body-secondary">
+              Made with ❤ in Argentina
+            </p>
+          </div>
+        </div>
+        <!-- FIN de menú lateral -->
+        <!-- Fin del encabezado -->
       </div>
     </nav>
-    <header class="container-fluid">aaa</header>
-    <!-- IMPORTANTE: Inicio del menú lateral -->
-    <!-- IMPORTANTE: Encabezado con logotipo y menú -->
-    <div class="container-flex align-items-center justify-content-end">
-      <button
-        class="btn bg-white text-black btn-outline-ligth btn-l btn-lg hamburger_menu"
-        data-aos="fade-down"
-        data-aos-easing="linear"
-        data-aos-duration="1000"
-        type="button"
-        data-bs-toggle="offcanvas"
-        data-bs-target="#offcanvasWithBothOptions"
-        aria-controls="offcanvasWithBothOptions"
-      >
-        Menú <i class="fa-solid fa-bars fa-lg"></i>
-      </button>
-    </div>
-    <div class="container-fluid d-flex flex-row-reverse">
-      <div
-        class="offcanvas offcanvas-end"
-        data-bs-scroll="true"
-        tabindex="-1"
-        id="offcanvasWithBothOptions"
-        aria-labelledby="offcanvasWithBothOptionsLabel"
-      >
-        <div class="offcanvas-header justify-content-end">
-          <button
-            type="button"
-            class="btn-close"
-            data-bs-dismiss="offcanvas"
-            aria-label="Close"
-          ></button>
-        </div>
-        <div class="offcanvas-body">
-          <!-- IMPORTANTE: Contenido del menú lateral -->
-          <!-- Logo -->
-          <img
-            class="rounded-circle"
-            src="./img/btc3.ico"
-            id="logo"
-            alt="logo_sitio"
-            width="125"
-            height="125"
-          />
-          <!-- Fin del logo -->
-          <!-- Lista de enlaces del menú -->
-          <ul class="menu">
-            <li><a href="index.html" class="menu_color">Inicio</a></li>
-            <li>
-              <a href="./html/crypto__final.html" class="menu_color"
-                >Nuestros proyectos</a
-              >
-            </li>
-            <li>
-              <a href="./html/nft__final.html" class="menu_color"
-                >¿Quienes somos?</a
-              >
-            </li>
-            <li>
-              <a href="./html/contacto__final.html" class="menu_color"
-                >¡Contacto!</a
-              >
-            </li>
-            <li>
-              <a href="./html/portafolio__final.html" class="menu_color"
-                >ARTE</a
-              >
-            </li>
-          </ul>
-        </div>
-        <p class="text-center text-body-secondary">Made with ❤ in Argentina</p>
-      </div>
-    </div>
-    <!-- FIN de menú lateral -->
-    <!-- Fin del encabezado -->
     <!-- Presentación de la página -->
     <div>
       <h2>Hola</h2>
@@ -159,10 +160,6 @@
     <!-- CONTENIDO PRINCIPAL -->
     <!-- Noticias principales del día -->
     <div class="container-sm border bg-success text-white">Nuestros sitios</div>
-    <!-- Botón de retorno arriba -->
-    <a href="#" class="boton-top"
-      ><i class="fa-sharp fa-solid fa-arrow-up fa-bounce"></i
-    ></a>
     <!-- Primer artículo -->
     <div class="container">
       <div class="row">
@@ -194,7 +191,41 @@
             data-aos-offset="300"
             data-aos-easing="ease-in-sine"
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint aspernatur ab, voluptate quidem vel ex quos eos quasi molestias dolorem illo recusandae. Vel quibusdam eaque eum unde hic aperiam exercitationem qui accusantium voluptates molestiae dolores quidem, esse libero nesciunt soluta, quod iure adipisci optio rerum? Dolorum non cupiditate reprehenderit? Labore voluptate harum iste quas rerum tenetur magnam vitae, ipsa dolorem qui eos incidunt perferendis porro possimus magni, nulla corrupti numquam totam reprehenderit? Rerum architecto cumque et voluptas ducimus, est id? Odio tempora repudiandae officiis soluta, est eveniet exercitationem impedit obcaecati fugit eligendi iure repellendus, nisi voluptas quam, itaque reprehenderit! Deserunt vero minima eveniet repellat itaque eius aut harum, ut ad neque nostrum ullam tenetur, cupiditate expedita? Ullam, voluptatum. Cumque ab eum iusto magni atque omnis temporibus tempore maxime aliquid quia distinctio, molestiae reiciendis fugiat perferendis assumenda, consectetur voluptatem sed, repellat reprehenderit! Similique, maiores dolor sint alias excepturi reprehenderit est nulla repellat sed quia soluta in, quas ullam nostrum sunt deleniti corporis suscipit commodi consequatur velit, veniam blanditiis aliquid voluptates quaerat? Quasi earum fugit sequi ducimus? Omnis, vitae. In molestiae deserunt non neque illo voluptatem, inventore voluptate nihil autem. Itaque explicabo laudantium deserunt cum ipsa veritatis fugit neque voluptas cumque ea facere dolorem ab, repudiandae voluptatum asperiores minima sequi, sapiente repellat vero officia quisquam, delectus minus assumenda voluptates. Cupiditate ea unde et officiis aliquid illo magnam perferendis quidem suscipit repellendus, in at, architecto odio odit itaque officia ab voluptates amet similique inventore dicta, debitis sint totam. Earum velit, porro maiores quis provident ab excepturi laudantium eius. Aliquid iste, voluptatum dignissimos quisquam in pariatur sit ad consectetur ab ipsum illum accusantium? Labore, iste hic rerum, nihil aliquam iusto totam voluptate laudantium eius eligendi vero optio magni nostrum atque maiores? Similique rerum accusantium aliquid reprehenderit aut quis? Cumque commodi eius alias harum dignissimos.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+            aspernatur ab, voluptate quidem vel ex quos eos quasi molestias
+            dolorem illo recusandae. Vel quibusdam eaque eum unde hic aperiam
+            exercitationem qui accusantium voluptates molestiae dolores quidem,
+            esse libero nesciunt soluta, quod iure adipisci optio rerum? Dolorum
+            non cupiditate reprehenderit? Labore voluptate harum iste quas rerum
+            tenetur magnam vitae, ipsa dolorem qui eos incidunt perferendis
+            porro possimus magni, nulla corrupti numquam totam reprehenderit?
+            Rerum architecto cumque et voluptas ducimus, est id? Odio tempora
+            repudiandae officiis soluta, est eveniet exercitationem impedit
+            obcaecati fugit eligendi iure repellendus, nisi voluptas quam,
+            itaque reprehenderit! Deserunt vero minima eveniet repellat itaque
+            eius aut harum, ut ad neque nostrum ullam tenetur, cupiditate
+            expedita? Ullam, voluptatum. Cumque ab eum iusto magni atque omnis
+            temporibus tempore maxime aliquid quia distinctio, molestiae
+            reiciendis fugiat perferendis assumenda, consectetur voluptatem sed,
+            repellat reprehenderit! Similique, maiores dolor sint alias
+            excepturi reprehenderit est nulla repellat sed quia soluta in, quas
+            ullam nostrum sunt deleniti corporis suscipit commodi consequatur
+            velit, veniam blanditiis aliquid voluptates quaerat? Quasi earum
+            fugit sequi ducimus? Omnis, vitae. In molestiae deserunt non neque
+            illo voluptatem, inventore voluptate nihil autem. Itaque explicabo
+            laudantium deserunt cum ipsa veritatis fugit neque voluptas cumque
+            ea facere dolorem ab, repudiandae voluptatum asperiores minima
+            sequi, sapiente repellat vero officia quisquam, delectus minus
+            assumenda voluptates. Cupiditate ea unde et officiis aliquid illo
+            magnam perferendis quidem suscipit repellendus, in at, architecto
+            odio odit itaque officia ab voluptates amet similique inventore
+            dicta, debitis sint totam. Earum velit, porro maiores quis provident
+            ab excepturi laudantium eius. Aliquid iste, voluptatum dignissimos
+            quisquam in pariatur sit ad consectetur ab ipsum illum accusantium?
+            Labore, iste hic rerum, nihil aliquam iusto totam voluptate
+            laudantium eius eligendi vero optio magni nostrum atque maiores?
+            Similique rerum accusantium aliquid reprehenderit aut quis? Cumque
+            commodi eius alias harum dignissimos.
           </div>
         </section>
       </div>
@@ -204,19 +235,23 @@
     <footer class="py-3 my-4">
       <ul class="nav justify-content-center border-bottom pb-3 mb-3">
         <li class="nav-item">
-          <a href="#" class="nav-link px-2 text-body-secondary">Home</a>
+          <a href="#" class="nav-link px-2 text-body-secondary">Inicio</a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link px-2 text-body-secondary">Features</a>
+          <a href="#" class="nav-link px-2 text-body-secondary"
+            >Nuestros proyectos</a
+          >
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link px-2 text-body-secondary">Pricing</a>
+          <a href="#" class="nav-link px-2 text-body-secondary"
+            >¿Quienes somos?</a
+          >
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link px-2 text-body-secondary">FAQs</a>
+          <a href="#" class="nav-link px-2 text-body-secondary">¡Contacto!</a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link px-2 text-body-secondary">About</a>
+          <a href="#" class="nav-link px-2 text-body-secondary">Precios</a>
         </li>
       </ul>
       <p class="text-center text-body-secondary">
@@ -227,7 +262,7 @@
         <i class="bi-heart-fill text-danger"></i> en Argentina
       </p>
     </footer>
-    <!-- IMPORTANTE: Botón de retorno arriba -->
+    <!-- Botón de retorno arriba -->
     <a href="#" class="boton-top"
       ><i class="fa-sharp fa-solid fa-arrow-up fa-bounce"></i
     ></a>
