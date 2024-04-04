@@ -47,33 +47,23 @@
   </head>
   <body>
     <!-- Inicio del encabezado -->
-    <header class="container-fluid">
-      <!-- IMPORTANTE: Encabezado con logotipo y menú -->
-      <a
-        href="./index.html"
-        class="logo sticky-top"
-        id="#"
+    <header class="container-fluid"></header>
+    <!-- IMPORTANTE: Inicio del menú lateral -->
+    <!-- IMPORTANTE: Encabezado con logotipo y menú -->
+    <div class="container d-flex align-items-center justify-content-end">
+      <button
+        class="btn bg-white text-black btn-outline-ligth btn-l btn-lg hamburger_menu"
         data-aos="fade-down"
         data-aos-easing="linear"
         data-aos-duration="1000"
-        ><h1 class="d-inline p-2 bg-dark text-white">Bienvenidos</h1></a
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasWithBothOptions"
+        aria-controls="offcanvasWithBothOptions"
       >
-      <div class="container d-flex align-items-center justify-content-end">
-        <button
-          class="btn bg-white text-black btn-outline-ligth btn-l btn-lg hamburger_menu"
-          data-aos="fade-down"
-          data-aos-easing="linear"
-          data-aos-duration="1000"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasWithBothOptions"
-          aria-controls="offcanvasWithBothOptions"
-        >
-          Menú <i class="fa-solid fa-bars fa-lg"></i>
-        </button>
-      </div>
-    </header>
-    <!-- IMPORTANTE: Inicio del menú lateral -->
+        Menú <i class="fa-solid fa-bars fa-lg"></i>
+      </button>
+    </div>
     <div class="container-fluid d-flex flex-row-reverse">
       <div
         class="offcanvas offcanvas-end"
@@ -110,7 +100,11 @@
                 >Nuestros proyectos</a
               >
             </li>
-            <li><a href="./html/nft__final.html" class="menu_color">¿Quienes somos?</a></li>
+            <li>
+              <a href="./html/nft__final.html" class="menu_color"
+                >¿Quienes somos?</a
+              >
+            </li>
             <li>
               <a href="./html/contacto__final.html" class="menu_color"
                 >¡Contacto!</a
@@ -131,18 +125,18 @@
     <!-- Presentación de la página -->
     <div class="container p-3 my-3 bg-primary text-white">
       <h1 class="text-white text-center">
-        Bienvenido a tu página favorita para poder ingresar a la desconocida y amplia web y potenciar tus ventas o ganar potenciales clientes
+        Bienvenido a tu página favorita para poder ingresar a la desconocida y
+        amplia web y potenciar tus ventas o ganar potenciales clientes
       </h1>
       <p class="text-center">
-        ¡Al contratarnos te vas a asegurar un servicio excepcional en el que el protagonista serás vos!
+        ¡Al contratarnos te vas a asegurar un servicio excepcional en el que el
+        protagonista serás vos!
       </p>
       <p class="text-center">¡Gracias por elegirnos a diario!</p>
     </div>
     <!-- CONTENIDO PRINCIPAL -->
     <!-- Noticias principales del día -->
-    <div class="container-sm border bg-success text-white">
-      Nuestros sitios
-    </div>
+    <div class="container-sm border bg-success text-white">Nuestros sitios</div>
     <!-- Botón de retorno arriba -->
     <a href="#" class="boton-top"
       ><i class="fa-sharp fa-solid fa-arrow-up fa-bounce"></i
@@ -185,16 +179,37 @@
     </div>
     <!-- FIN de contenido principal -->
     <!-- Inicio de pie de página -->
-    <footer class="container-fluid bg-dark text-white">
-      <p class="text-center">
-        Derechos Reservados &copy; 2024 | Finanzas2GO - Hecho con
+    <footer class="py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2 text-body-secondary">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2 text-body-secondary">Features</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2 text-body-secondary">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2 text-body-secondary">FAQs</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2 text-body-secondary">About</a>
+        </li>
+      </ul>
+      <p class="text-center text-body-secondary">
+        Derechos Reservados &copy; 2024
+      </p>
+      <p class="text-center text-body-secondary">
+        Hecho con
         <i class="bi-heart-fill text-danger"></i> en Argentina
       </p>
-      <!-- IMPORTANTE: Botón de retorno arriba -->
-      <a href="#" class="boton-top"
-        ><i class="fa-sharp fa-solid fa-arrow-up fa-bounce"></i
-      ></a>
     </footer>
+    <!-- IMPORTANTE: Botón de retorno arriba -->
+    <a href="#" class="boton-top"
+      ><i class="fa-sharp fa-solid fa-arrow-up fa-bounce"></i
+    ></a>
+    <!--</footer>-->
     <!-- FIN de pie de página -->
     <!-- IMPORTANTE: Enlace a la biblioteca de animación AOS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
