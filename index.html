@@ -46,6 +46,16 @@
     <link rel="icon" href="./img/btc3.ico" />
   </head>
   <body>
+    <!-- Inicio del encabezado -->
+    <nav class="navbar bg-body-tertiary">
+      <div class="container-fluid"></div>
+    </nav>
+    <nav class="navbar fixed-top bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">AR-biop</a>
+        <!-- Fin del encabezado -->
+      </div>
+    </nav>
     <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
       <symbol id="check2" viewBox="0 0 16 16">
         <path
@@ -71,7 +81,6 @@
         ></path>
       </symbol>
     </svg>
-
     <div
       class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle"
     >
@@ -86,7 +95,7 @@
         <svg class="bi my-1 theme-icon-active" width="1em" height="1em">
           <use href="#sun-fill"></use>
         </svg>
-        <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+        <span class="visually-hidden" id="bd-theme-text">Cambiar fondo</span>
       </button>
       <ul
         class="dropdown-menu dropdown-menu-end shadow"
@@ -102,7 +111,7 @@
             <svg class="bi me-2 opacity-50" width="1em" height="1em">
               <use href="#sun-fill"></use>
             </svg>
-            Light
+            Claro
             <svg class="bi ms-auto d-none" width="1em" height="1em">
               <use href="#check2"></use>
             </svg>
@@ -118,7 +127,7 @@
             <svg class="bi me-2 opacity-50" width="1em" height="1em">
               <use href="#moon-stars-fill"></use>
             </svg>
-            Dark
+            Oscuro
             <svg class="bi ms-auto d-none" width="1em" height="1em">
               <use href="#check2"></use>
             </svg>
@@ -170,46 +179,6 @@
         ></path>
       </symbol>
     </svg>
-
-    <div class="container">
-      <header class="border-bottom lh-1 py-3">
-        <div class="row flex-nowrap justify-content-between align-items-center">
-          <div class="col-4 pt-1">
-            <a class="link-secondary" href="#">Subscribe</a>
-          </div>
-          <div class="col-4 text-center">
-            <a
-              class="blog-header-logo text-body-emphasis text-decoration-none"
-              href="#"
-              >Large</a
-            >
-          </div>
-          <div class="col-4 d-flex justify-content-end align-items-center">
-            <a class="link-secondary" href="#" aria-label="Search">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                class="mx-3"
-                role="img"
-                viewBox="0 0 24 24"
-              >
-                <title>Search</title>
-                <circle cx="10.5" cy="10.5" r="7.5"></circle>
-                <path d="M21 21l-5.2-5.2"></path>
-              </svg>
-            </a>
-            <a class="btn btn-sm btn-outline-secondary" href="#">Sign up</a>
-          </div>
-        </div>
-      </header>
-    </div>
-
     <main class="container">
       <div class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary">
         <div class="col-lg-6 px-0">
@@ -233,8 +202,8 @@
               <h3 class="mb-0">¡Gracias por elegirnos a diario!</h3>
               <div class="mb-1 text-body-secondary">Nov 12</div>
               <p class="card-text mb-auto">
-                Recordá que con nuestro servicio vas a poder ingresar a la
-                web y así permitirte potenciar tus ventas
+                Recordá que con nuestro servicio vas a poder ingresar a la web y
+                así permitirte potenciar tus ventas
               </p>
               <a
                 href="#"
@@ -280,7 +249,7 @@
                 class="icon-link gap-1 icon-link-hover stretched-link"
               >
                 Seguir leyendo...
-                <svg class="bi"><use xlink:href="#chevron-right" ></use></svg>
+                <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
               </a>
             </div>
             <div class="col-auto d-none d-lg-block">
@@ -683,91 +652,6 @@
     </main>
   </body>
   <body>
-    <!-- Inicio del encabezado -->
-    <nav class="navbar bg-body-tertiary">
-      <div class="container-fluid"></div>
-    </nav>
-    <nav class="navbar fixed-top bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">AR-biop</a>
-        <!-- IMPORTANTE: Inicio del menú lateral -->
-        <!-- IMPORTANTE: Encabezado con logotipo y menú -->
-        <div class="container-flex align-items-center justify-content-end">
-          <button
-            class="btn bg-white text-black btn-outline-ligth btn-l btn-lg hamburger_menu"
-            data-aos="fade-down"
-            data-aos-easing="linear"
-            data-aos-duration="1000"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasWithBothOptions"
-            aria-controls="offcanvasWithBothOptions"
-          >
-            Menú <i class="fa-solid fa-bars fa-lg"></i>
-          </button>
-        </div>
-        <div class="container-fluid d-flex flex-row-reverse">
-          <div
-            class="offcanvas offcanvas-end"
-            data-bs-scroll="true"
-            tabindex="-1"
-            id="offcanvasWithBothOptions"
-            aria-labelledby="offcanvasWithBothOptionsLabel"
-          >
-            <div class="offcanvas-header justify-content-end">
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="offcanvas-body">
-              <!-- IMPORTANTE: Contenido del menú lateral -->
-              <!-- Logo -->
-              <img
-                class="rounded-circle"
-                src="./img/btc3.ico"
-                id="logo"
-                alt="logo_sitio"
-                width="125"
-                height="125"
-              />
-              <!-- Fin del logo -->
-              <!-- Lista de enlaces del menú -->
-              <ul class="menu">
-                <li><a href="../index.html" class="menu_color">Inicio</a></li>
-                <li>
-                  <a href="../html/ourprojects__a.html" class="menu_color"
-                    >Nuestros proyectos</a
-                  >
-                </li>
-                <li>
-                  <a href="../html/whoweare__a.html" class="menu_color"
-                    >¿Quienes somos?</a
-                  >
-                </li>
-                <li>
-                  <a href="../html/contact__a.html" class="menu_color"
-                    >¡Contacto!</a
-                  >
-                </li>
-                <li>
-                  <a href="./html/ourprices__a.html" class="menu_color"
-                    >Precios</a
-                  >
-                </li>
-              </ul>
-            </div>
-            <p class="text-center text-body-secondary">
-              Made with ❤ in Argentina
-            </p>
-          </div>
-        </div>
-        <!-- FIN de menú lateral -->
-        <!-- Fin del encabezado -->
-      </div>
-    </nav>
     <!-- Presentación de la página -->
     <!-- CONTENIDO PRINCIPAL -->
     <!-- Noticias principales del día
